@@ -77,3 +77,12 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2506)
 
 
+Started GET "/" for ::1 at 2022-12-24 12:05:36 +0800
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 354.7ms | Allocations: 67148)
+Completed 200 OK in 363ms (Views: 358.1ms | Allocations: 68110)
+
+
