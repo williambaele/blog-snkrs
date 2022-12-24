@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
+ /* TITLES */
+h1, h2, h3, h4 {
+  font-family: 'Monda', sans-serif;
+}
+ /*
+ MAIN: 112B3C -- Deep blue
+ SECOND: 205375 -- Clear blue
+ 3RD: F66B0E -- Orange
+ 4TH: EFEFEF -- Grey
+ */
+
+ .pattern-bg {
+  background-color:hsla(203,55%,15%,1);
+  background-image:
+  radial-gradient(at 0% 100%, hsla(204,57%,29%,1) 0px, transparent 50%),
+  radial-gradient(at 97% 59%, hsla(204,56%,28%,1) 0px, transparent 50%);
+ }

@@ -1,1 +1,6 @@
-<h1>hi</h1>
+<%= render 'shared/hero-banner'%>
+<ul>
+ <% @sneakers.each do |sneaker| %>
+ <li><%= sneaker.name %></li>
+<%end%>
+</ul>
