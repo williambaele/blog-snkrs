@@ -2,7 +2,7 @@
 <div class="container mx-auto flex justify-center">
   <ul>
   <% @sneakers.each do |sneaker| %>
-  <li><%= sneaker.name %> - <%= sneaker.drop_date %> - <%= link_to "check item", sneakers_path(sneaker) %></li>
+  <li><%= sneaker.name %> - <%= sneaker.drop_date %> - <%= link_to "check", sneakers_path(sneaker)  %></li>
   <%end%>
   </ul>
 </div>
