@@ -14,11 +14,33 @@ class SneakersController < ApplicationController
   def create
     @sneaker = Sneaker.new(sneaker_params)
     if @sneaker.save!
-      redirect_to sneaker_path(@sneaker)
+      redirect_to root_path
+      flash[:message] = "Saved"
+
     end
   end
   def new
     @sneaker = Sneaker.new
+  end
+
+  def edit
+    @sneaker = Sneaker.find(params[:id])
+  end
+
+  def update
+    @sneaker = Sneaker.find(params[:id])
+    if @sneaker.update(sneaker_params)
+      redirect_to sneaker_path(@sneaker)
+    else
+      redirect_to root_path
+    end
+  end
+
+  def destroy
+    @sneaker = Sneaker.find(params[:id])
+    if @sneaker.destroy!
+      redirect_to root_path
+    end
   end
 
   private
