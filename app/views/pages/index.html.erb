@@ -1,6 +1,5 @@
 <%= render 'shared/hero-banner'%>
 <div class="container mx-auto flex justify-center">
-<h1>hi</h1>
   <ul>
   <% @sneakers.take(15).each do |sneaker| %>
   <li><%= sneaker.name %> - <%= sneaker.drop_date %> - <%= link_to "check", sneaker_path(sneaker) %></li>
