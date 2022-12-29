@@ -8,15 +8,13 @@ class SneakersController < ApplicationController
       @sneaker = Sneaker.find(params[:id])
     else
       redirect_to root_path
-      flash[:message] = "Something went wrong"
     end
   end
   def create
     @sneaker = Sneaker.new(sneaker_params)
     if @sneaker.save!
       redirect_to root_path
-      flash[:message] = "Saved"
-
+      flash[:success] = "Your pair has been saved."
     end
   end
   def new
