@@ -13,7 +13,7 @@ class SneakersController < ApplicationController
   def create
     @sneaker = Sneaker.new(sneaker_params)
     if @sneaker.save!
-      redirect_to root_path
+      redirect_to sneaker_path(@sneaker)
       flash[:success] = "Your pair has been saved."
     end
   end
