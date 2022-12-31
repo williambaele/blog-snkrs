@@ -13860,3 +13860,654 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms | Allocations: 18315)
 
 
+Started GET "/" for ::1 at 2022-12-31 16:38:46 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 16923)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 20034)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.3ms | Allocations: 20833)
+
+
+Started GET "/sneakers/238" for ::1 at 2022-12-31 16:38:47 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"238"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2725)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 4433)
+
+
+Started GET "/sneakers/239" for ::1 at 2022-12-31 16:38:49 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"239"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 158)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3565)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 5546)
+
+
+Started GET "/sneakers/238" for ::1 at 2022-12-31 16:42:19 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"238"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2253)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.4ms | Allocations: 3682)
+
+
+Started GET "/sneakers/new" for ::1 at 2022-12-31 16:42:21 +0100
+Processing by SneakersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/new.html.erb within layouts/application
+  Rendered sneakers/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2513)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4550)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4866)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:42:30 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.6ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 16931)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 19199)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms | Allocations: 19781)
+
+
+Started GET "/sneakers/204" for ::1 at 2022-12-31 16:42:33 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"204"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 204], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 204], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2243)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 3613)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:42:43 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 16218)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 18348)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 18600)
+
+
+Started GET "/sneakers/238" for ::1 at 2022-12-31 16:42:52 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"238"}
+  [1m[36mSneaker Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2244)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.6ms | Allocations: 3525)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:43:03 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 16218)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 18348)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms | Allocations: 18598)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:44:03 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.3ms | Allocations: 101)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 16917)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 1.0ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 20003)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.3ms | Allocations: 20780)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:44:10 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 101)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 16917)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 20006)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.3ms | Allocations: 20805)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:44:20 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 101)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 16919)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 20025)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.3ms | Allocations: 20825)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:44:29 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 101)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 16918)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 20007)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms | Allocations: 20806)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:44:51 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 101)
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 16919)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 20026)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.4ms | Allocations: 20826)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mSneaker Load (0.6ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 238]]
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 239]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 198]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 199]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 200]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 201]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 202]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 203]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 204]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 205]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 206]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 207]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 208]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 209]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 210]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 211]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 212]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 213]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 214]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.3ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 215]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 216]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 217]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 218]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 219]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 220]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 221]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 222]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 223]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 224]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 225]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 226]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 227]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 228]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 229]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 230]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.1ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 231]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 232]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 233]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 234]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 235]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 236]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sneakers" WHERE "sneakers"."id" = $1[0m  [["id", 237]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.6ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.732233"], ["updated_at", "2022-12-31 15:46:33.732233"], ["name", "Fay"], ["sku", "DD1509-100"], ["description", "Assumenda quisquam laborum nesciunt adipisci autem et odit commodi natus at et recusandae fugiat maiores et voluptatum laudantium qui qui."], ["drop_date", "2022-10-11"], ["estimated_ressell", 1], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 235]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.737729"], ["updated_at", "2022-12-31 15:46:33.737729"], ["name", "Kozey"], ["sku", "DD1509-220"], ["description", "Praesentium magni et omnis blanditiis sed optio dolorem earum qui quo sit tenetur id maiores totam aut aperiam pariatur ut."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 124]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.741314"], ["updated_at", "2022-12-31 15:46:33.741314"], ["name", "McKenzie"], ["sku", "MP1509-100"], ["description", "Autem dolor enim illum commodi incidunt eum repudiandae excepturi ducimus veritatis et omnis officia laboriosam cum dolorem possimus totam doloribus."], ["drop_date", "2022-10-10"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 161]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.744580"], ["updated_at", "2022-12-31 15:46:33.744580"], ["name", "Hammes"], ["sku", "DD1509-220"], ["description", "Quisquam quo eius nobis tenetur molestiae accusamus ullam voluptates doloremque aspernatur doloribus pariatur dolores rerum aperiam ut non commodi dolores."], ["drop_date", "2022-10-13"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 295]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.747989"], ["updated_at", "2022-12-31 15:46:33.747989"], ["name", "Goyette"], ["sku", "DD1509-220"], ["description", "Fuga ex voluptatum magni ad occaecati est nisi ut a consequatur illum est facilis omnis eligendi deserunt qui dignissimos sunt."], ["drop_date", "2022-10-10"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 104]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.7ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.752437"], ["updated_at", "2022-12-31 15:46:33.752437"], ["name", "Ebert"], ["sku", "DD1519-100"], ["description", "Alias rerum sunt quis labore voluptatem vero veniam quis eum rem blanditiis excepturi voluptatem nobis est consectetur suscipit dolores eos."], ["drop_date", "2022-10-13"], ["estimated_ressell", 1], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 229]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.4ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.757463"], ["updated_at", "2022-12-31 15:46:33.757463"], ["name", "Lueilwitz"], ["sku", "DD1519-100"], ["description", "Quia reiciendis voluptatem blanditiis voluptas ut distinctio sit voluptatem sit omnis tempora veritatis quae laudantium dolorem vero pariatur laborum adipisci."], ["drop_date", "2022-10-12"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 197]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.761724"], ["updated_at", "2022-12-31 15:46:33.761724"], ["name", "Flatley"], ["sku", "DD1509-220"], ["description", "Nihil quis ducimus ratione eveniet iure deleniti modi facere voluptas distinctio repellat sunt unde est adipisci autem recusandae ut enim."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 207]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.765196"], ["updated_at", "2022-12-31 15:46:33.765196"], ["name", "White"], ["sku", "DD1519-100"], ["description", "Quibusdam earum magni quam maxime quaerat odit minus alias consequatur voluptas quo est enim quae et est commodi molestias fuga."], ["drop_date", "2022-10-13"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 283]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.5ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.769403"], ["updated_at", "2022-12-31 15:46:33.769403"], ["name", "Rolfson"], ["sku", "DD1519-100"], ["description", "Maiores sit nobis ducimus totam inventore illo voluptas dolorem modi repudiandae iusto ut molestias doloremque et corrupti temporibus sed molestiae."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 270]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.774912"], ["updated_at", "2022-12-31 15:46:33.774912"], ["name", "Wilderman"], ["sku", "DD1509-220"], ["description", "Voluptas qui quo neque vero qui non et quae omnis id nobis unde accusamus aut placeat id quisquam rerum voluptas."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 162]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.780281"], ["updated_at", "2022-12-31 15:46:33.780281"], ["name", "Kunde"], ["sku", "DD1509-100"], ["description", "Et nobis velit enim vero commodi quia excepturi omnis dolor magni assumenda debitis qui reiciendis maiores praesentium exercitationem neque est."], ["drop_date", "2022-10-10"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 248]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.6ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.786117"], ["updated_at", "2022-12-31 15:46:33.786117"], ["name", "Balistreri"], ["sku", "MP1509-100"], ["description", "Voluptas id assumenda et qui odit illo ea consequatur modi esse et fugiat ullam sed aspernatur quo enim ducimus aut."], ["drop_date", "2022-10-13"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 134]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.4ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.792726"], ["updated_at", "2022-12-31 15:46:33.792726"], ["name", "Huel"], ["sku", "DD1509-100"], ["description", "Quos corrupti saepe temporibus incidunt soluta illum doloribus est sequi fugiat iure deleniti occaecati et voluptatem mollitia autem quo debitis."], ["drop_date", "2022-10-12"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 157]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.798766"], ["updated_at", "2022-12-31 15:46:33.798766"], ["name", "Gibson"], ["sku", "DD1509-220"], ["description", "Aut ea sit quo atque quis error corrupti repudiandae sit provident saepe iure ut odit fugit ipsa aperiam perspiciatis sint."], ["drop_date", "2022-10-13"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 263]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.803165"], ["updated_at", "2022-12-31 15:46:33.803165"], ["name", "Fritsch"], ["sku", "DD1509-100"], ["description", "Reiciendis consequatur ut suscipit veniam doloribus ipsam dolores soluta et sit sint dignissimos asperiores saepe iure aliquid eum consequuntur nam."], ["drop_date", "2022-10-10"], ["estimated_ressell", 1], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 137]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.806815"], ["updated_at", "2022-12-31 15:46:33.806815"], ["name", "Kilback"], ["sku", "MP1509-100"], ["description", "Numquam quas qui est voluptas ea nesciunt reprehenderit architecto fuga quo voluptas maxime ea voluptatem ut sed ut praesentium impedit."], ["drop_date", "2022-10-11"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 157]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.5ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.810514"], ["updated_at", "2022-12-31 15:46:33.810514"], ["name", "Schulist"], ["sku", "DD1509-100"], ["description", "Aut natus id iure voluptatum id ut corporis veritatis vel provident et harum laboriosam nobis fugiat aut dicta in ut."], ["drop_date", "2022-10-13"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 148]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.815982"], ["updated_at", "2022-12-31 15:46:33.815982"], ["name", "Donnelly"], ["sku", "DD1509-100"], ["description", "Aliquid ducimus tempore sed repudiandae voluptas rerum corrupti perspiciatis quisquam dolor quia voluptate ea debitis excepturi aut saepe et voluptatibus."], ["drop_date", "2022-10-10"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 123]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.820093"], ["updated_at", "2022-12-31 15:46:33.820093"], ["name", "Mosciski"], ["sku", "DD1519-100"], ["description", "Nobis esse eos ut odio nostrum veritatis iste ipsa labore a veniam voluptas sapiente quia aliquid delectus natus consectetur nemo."], ["drop_date", "2022-10-11"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 189]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.824339"], ["updated_at", "2022-12-31 15:46:33.824339"], ["name", "Rogahn"], ["sku", "MP1509-100"], ["description", "In deserunt velit at rem debitis aut deleniti cupiditate voluptas blanditiis esse expedita quod eos perspiciatis dolores earum recusandae repellat."], ["drop_date", "2022-10-10"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 126]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.827893"], ["updated_at", "2022-12-31 15:46:33.827893"], ["name", "Wilkinson"], ["sku", "DD1509-100"], ["description", "Dolorem iure in enim voluptas corporis labore illo nam libero nihil ipsam voluptatem magni non architecto consequatur quidem quos et."], ["drop_date", "2022-10-10"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 174]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.831449"], ["updated_at", "2022-12-31 15:46:33.831449"], ["name", "Keebler"], ["sku", "MP1509-100"], ["description", "Nulla culpa voluptas omnis est in ex fugiat eveniet est quaerat laboriosam sapiente quia magni et quasi illum eos consectetur."], ["drop_date", "2022-10-10"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 206]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.835347"], ["updated_at", "2022-12-31 15:46:33.835347"], ["name", "Kuhn"], ["sku", "DD1509-220"], ["description", "Illum ex ullam voluptatem qui alias qui quo explicabo aspernatur qui id quo et enim dolor officia cumque excepturi id."], ["drop_date", "2022-10-12"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 147]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.839244"], ["updated_at", "2022-12-31 15:46:33.839244"], ["name", "Morissette"], ["sku", "DD1509-100"], ["description", "Dicta ea facilis veritatis aut labore vel iure esse sit nesciunt mollitia voluptatem illo quidem fugiat et eum officia voluptas."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 177]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.843205"], ["updated_at", "2022-12-31 15:46:33.843205"], ["name", "Koelpin"], ["sku", "MP1509-100"], ["description", "Eum qui quia aliquid omnis non eveniet non dolor asperiores sit adipisci quibusdam vel quasi nobis enim sint incidunt et."], ["drop_date", "2022-10-13"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 278]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.847585"], ["updated_at", "2022-12-31 15:46:33.847585"], ["name", "Smitham"], ["sku", "MP1509-100"], ["description", "Assumenda similique voluptatem nemo quidem consequuntur doloribus harum et neque quia maxime aut repellat eum sint rerum sed nihil dolores."], ["drop_date", "2022-10-13"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 124]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.851589"], ["updated_at", "2022-12-31 15:46:33.851589"], ["name", "Friesen"], ["sku", "DD1509-220"], ["description", "Dolorem neque placeat quis blanditiis ea accusamus molestiae sequi laudantium recusandae non saepe tempore provident itaque qui error est debitis."], ["drop_date", "2022-10-11"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 270]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.855647"], ["updated_at", "2022-12-31 15:46:33.855647"], ["name", "Block"], ["sku", "DD1519-100"], ["description", "Consequatur dicta est nostrum odio illo expedita dolor enim voluptas totam placeat nesciunt quos accusamus earum doloremque voluptatem enim officiis."], ["drop_date", "2022-10-13"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 183]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.858926"], ["updated_at", "2022-12-31 15:46:33.858926"], ["name", "Simonis"], ["sku", "DD1509-220"], ["description", "At ratione voluptatibus molestiae distinctio sint laudantium dolor velit aliquid necessitatibus id non tempore magnam aut ducimus veniam facilis a."], ["drop_date", "2022-10-11"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 116]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.862339"], ["updated_at", "2022-12-31 15:46:33.862339"], ["name", "Lind"], ["sku", "DD1509-100"], ["description", "Perferendis rerum minus doloribus et quo molestias cumque voluptatibus et non deleniti a nihil illum sed qui assumenda adipisci reiciendis."], ["drop_date", "2022-10-10"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 124]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.865815"], ["updated_at", "2022-12-31 15:46:33.865815"], ["name", "Gerlach"], ["sku", "DD1519-100"], ["description", "Vitae necessitatibus nemo qui dolorum hic praesentium ex et aspernatur nesciunt autem consequatur neque dolore maiores delectus id incidunt illo."], ["drop_date", "2022-10-10"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 150]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.869180"], ["updated_at", "2022-12-31 15:46:33.869180"], ["name", "Marquardt"], ["sku", "MP1509-100"], ["description", "Quisquam voluptates aut labore aliquam modi et qui atque dolorem iusto ab dolorem nihil omnis accusantium voluptatibus qui sapiente ut."], ["drop_date", "2022-10-13"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 141]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.872866"], ["updated_at", "2022-12-31 15:46:33.872866"], ["name", "Fisher"], ["sku", "MP1509-100"], ["description", "Dolorem expedita non reiciendis neque cumque molestias enim vel laudantium deserunt tempore voluptatum aliquam nihil aut cum maiores itaque et."], ["drop_date", "2022-10-13"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 291]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.876921"], ["updated_at", "2022-12-31 15:46:33.876921"], ["name", "Ondricka"], ["sku", "DD1519-100"], ["description", "Similique nisi voluptas voluptatum sit nulla nemo voluptatem incidunt quisquam ut culpa voluptatem aut doloribus fugit ipsa omnis optio voluptate."], ["drop_date", "2022-10-13"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 190]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.881903"], ["updated_at", "2022-12-31 15:46:33.881903"], ["name", "Kerluke"], ["sku", "DD1509-220"], ["description", "Vel sapiente pariatur omnis rerum optio fugiat et amet at velit eum et molestias dicta dolorem neque tenetur quia reiciendis."], ["drop_date", "2022-10-11"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 216]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.894757"], ["updated_at", "2022-12-31 15:46:33.894757"], ["name", "Leuschke"], ["sku", "MP1509-100"], ["description", "Hic placeat corrupti sit fugiat tempora doloremque rerum aliquid ipsa et expedita asperiores consequatur delectus voluptatem atque laudantium id accusamus."], ["drop_date", "2022-10-11"], ["estimated_ressell", 3], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 250]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.898422"], ["updated_at", "2022-12-31 15:46:33.898422"], ["name", "Schaden"], ["sku", "MP1509-100"], ["description", "Quia porro ratione esse pariatur culpa eaque placeat consequatur et nihil eum maxime omnis ullam qui in cupiditate facilis fugiat."], ["drop_date", "2022-10-12"], ["estimated_ressell", 4], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 206]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.3ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.902191"], ["updated_at", "2022-12-31 15:46:33.902191"], ["name", "O'Connell"], ["sku", "DD1509-100"], ["description", "Ipsum possimus consectetur voluptates mollitia cumque sed repellendus aut laboriosam minima dolorum quo ut sint ad et velit libero voluptas."], ["drop_date", "2022-10-11"], ["estimated_ressell", 5], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 192]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSneaker Create (0.2ms)[0m  [1m[32mINSERT INTO "sneakers" ("created_at", "updated_at", "name", "sku", "description", "drop_date", "estimated_ressell", "ressell_circle", "brand", "model", "retail") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["created_at", "2022-12-31 15:46:33.905596"], ["updated_at", "2022-12-31 15:46:33.905596"], ["name", "Fay"], ["sku", "MP1509-100"], ["description", "Qui ad quis itaque molestias perferendis tempore sit voluptatem sunt qui eum cum aspernatur saepe a quia consequatur excepturi iste."], ["drop_date", "2022-10-12"], ["estimated_ressell", 2], ["ressell_circle", nil], ["brand", nil], ["model", nil], ["retail", 116]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-12-31 16:46:51 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.6ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 16290)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 179)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 19399)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.3ms | Allocations: 20199)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:51:20 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 1.6ms | Allocations: 100)
+  [1m[36mSneaker Load (0.8ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 16253)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 19356)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.8ms | Allocations: 20156)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:52:16 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.8ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 16246)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 19360)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.3ms | Allocations: 20160)
+
+
+Started GET "/sneakers/241" for ::1 at 2022-12-31 16:53:04 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"241"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 158)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 1.1ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3553)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 0.7ms | Allocations: 5460)
+
+
+Started GET "/sneakers/241" for ::1 at 2022-12-31 16:53:04 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"241"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2246)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 3673)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:53:05 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 1.5ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 16261)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 18499)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.3ms | Allocations: 19081)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:53:48 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.7ms | Allocations: 100)
+  [1m[36mSneaker Load (0.4ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 16247)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 1.0ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 19357)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.4ms | Allocations: 20156)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:54:06 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.3ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 16246)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 1.6ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 19347)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.3ms | Allocations: 20146)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:55:12 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.6ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 16246)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.9ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 20834)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.3ms | Allocations: 21633)
+
+
+Started GET "/" for ::1 at 2022-12-31 16:56:33 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.6ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 16303)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 19509)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.3ms | Allocations: 20308)
+
+
+Started GET "/sneakers/240" for ::1 at 2022-12-31 16:56:39 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"240"}
+  [1m[36mSneaker Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 240], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 240], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 157)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 40)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2706)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.5ms | Allocations: 4414)
+
+
