@@ -1,31 +1,33 @@
 <%= render 'shared/hero-banner'%>
-<div class="container mx-auto">
-  <% @sneakers.each do |sneaker| %>
-    <%= link_to sneaker_path(sneaker) do %>
-      <div class="grid grid-cols-2 flex justify-between hover:bg-slate-100">
-        <div class="content-center gap-y-2 grid">
-          <h2 class="text-4xl">
-            <%= sneaker.name.capitalize %>
-          </h2>
-          <h3>
-            <%= sneaker.retail %>€
-          </h3>
-            <% if sneaker.estimated_ressell == 5 %>
-              <h3>💸💸💸💸💸</h3>
-            <% elsif sneaker.estimated_ressell == 4 %>
-              <h3>💸💸💸💸<span class="grey-emoji">💸</span></h3>
-            <% elsif sneaker.estimated_ressell == 3 %>
-              <h3>💸💸💸<span class="grey-emoji">💸💸</span></h3>
-            <% elsif sneaker.estimated_ressell == 2 %>
-              <h3>💸💸<span class="grey-emoji">💸💸💸</span></h3>
-            <% else %>
-              <h3>💸<span class="grey-emoji">💸💸💸💸</span></h3>
-            <% end %>
-        </div>
-        <div class="justify-end	flex">
-        <%= image_tag "dunk-bw.webp", height: 250, width: 250 %>
+<% @sneakers.each do |sneaker| %>
+  <%= link_to sneaker_path(sneaker) do %>
+    <div class="hover:bg-slate-100">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 flex justify-between">
+          <div class="content-center gap-y-2 grid">
+            <h2 class="text-4xl">
+              <%= sneaker.name.capitalize %>
+            </h2>
+            <h3>
+              <%= sneaker.retail %>€
+            </h3>
+              <% if sneaker.estimated_ressell == 5 %>
+                <h3>💸💸💸💸💸</h3>
+              <% elsif sneaker.estimated_ressell == 4 %>
+                <h3>💸💸💸💸<span class="grey-emoji">💸</span></h3>
+              <% elsif sneaker.estimated_ressell == 3 %>
+                <h3>💸💸💸<span class="grey-emoji">💸💸</span></h3>
+              <% elsif sneaker.estimated_ressell == 2 %>
+                <h3>💸💸<span class="grey-emoji">💸💸💸</span></h3>
+              <% else %>
+                <h3>💸<span class="grey-emoji">💸💸💸💸</span></h3>
+              <% end %>
+          </div>
+          <div class="justify-end	flex">
+          <%= image_tag "dunk-bw.webp", height: 250, width: 250 %>
+          </div>
         </div>
       </div>
-    <% end %>
-  <%end%>
-</div>
+    </div>
+  <% end %>
+<%end%>

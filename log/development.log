@@ -14595,3 +14595,217 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.6ms | Allocations: 19528)
 
 
+Started GET "/sneakers/280" for ::1 at 2022-12-31 17:04:17 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 13)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2264)
+Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 0.6ms | Allocations: 3636)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:12:21 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mSneaker Load (0.9ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 37.8ms | Allocations: 18883)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 21020)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 9.1ms | Allocations: 21269)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:12:59 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 15857)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered shared/_flash.html.erb (Duration: 0.0ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 17979)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.3ms | Allocations: 18230)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:13:55 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.9ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 16660)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 1.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 19764)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms | Allocations: 20541)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:05 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.4ms | Allocations: 100)
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 16654)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 19755)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.5ms | Allocations: 20554)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:10 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.3ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 16661)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 19756)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.3ms | Allocations: 20555)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:11 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.0ms | Allocations: 9)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 15857)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 44)
+  Rendered shared/_flash.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 17981)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.3ms | Allocations: 18251)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:25 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.3ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 16654)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 19761)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.3ms | Allocations: 20538)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:34 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 16654)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.7ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 19734)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.3ms | Allocations: 20533)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:40 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 16664)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 19760)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.3ms | Allocations: 20560)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:14:51 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.3ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:3
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 16664)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.9ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 19783)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 20582)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:15:44 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 0.2ms | Allocations: 100)
+  [1m[36mSneaker Load (0.3ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 16658)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 19769)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.3ms | Allocations: 20568)
+
+
+Started GET "/sneakers/280" for ::1 at 2022-12-31 17:15:47 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 158)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 228)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3556)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 5493)
+
+
+Started GET "/" for ::1 at 2022-12-31 17:19:32 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered shared/_hero-banner.html.erb (Duration: 1.4ms | Allocations: 100)
+  [1m[36mSneaker Load (0.5ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers"[0m
+  ↳ app/views/pages/index.html.erb:2
+  Rendered pages/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 16670)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 176)
+  Rendered shared/_flash.html.erb (Duration: 1.1ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 19772)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.5ms | Allocations: 20572)
+
+
