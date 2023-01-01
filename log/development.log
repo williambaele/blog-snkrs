@@ -14961,3 +14961,309 @@ Processing by SneakersController#show as HTML
 Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 6078)
 
 
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:48:27 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 984)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4127)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 6092)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:51:29 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1008)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 4157)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 6122)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:51:33 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 994)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 228)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4151)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 6117)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:52:51 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.7ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4162)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.5ms | Allocations: 6127)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:01 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 1.0ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 4149)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 6114)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:07 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4143)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 6109)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:21 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4158)
+Completed 200 OK in 12ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 6123)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:29 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 998)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4135)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 6100)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:39 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 998)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 4162)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 6127)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:47 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.3ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4128)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 6093)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:54:53 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4134)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.4ms | Allocations: 6104)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:55:26 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.8ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4143)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.4ms | Allocations: 6108)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:55:54 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4140)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.5ms | Allocations: 6105)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:55:59 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.5ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4128)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 6093)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:56:09 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4158)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 6123)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:56:16 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.1ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4152)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 6117)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:56:27 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 998)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 0.4ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4150)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 6115)
+
+
+Started GET "/sneakers/280" for ::1 at 2023-01-01 10:56:41 +0100
+Processing by SneakersController#show as HTML
+  Parameters: {"id"=>"280"}
+  [1m[36mSneaker Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:7:in `show'
+  [1m[36mSneaker Load (0.2ms)[0m  [1m[34mSELECT "sneakers".* FROM "sneakers" WHERE "sneakers"."id" = $1 LIMIT $2[0m  [["id", 280], ["LIMIT", 1]]
+  ↳ app/controllers/sneakers_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering sneakers/show.html.erb within layouts/application
+  Rendered sneakers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 997)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered shared/_flash.html.erb (Duration: 1.0ms | Allocations: 276)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4146)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 6111)
+
+

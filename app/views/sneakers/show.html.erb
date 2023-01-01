@@ -3,12 +3,24 @@
     <div>
       <h1 class="text-4xl"><%= @sneaker.name.capitalize %></h1>
     </div>
-    <div>
-      <p class="bg-[#F66B0E] py-2 px-4 rounded-md text-white font-medium"><%= @sneaker.retail %>€</p>
+    <div class="bg-[#112B3C] rounded border-2 border-[#112B3C]">
+      <p class="py-2 px-4 text-white font-medium text-center"><%= @sneaker.drop_date.strftime("%d %B %Y") %></p>
+      <p class="py-2 px-4 bg-white text-white font-medium text-center text-[#112B3C]"><%= @sneaker.retail %>€</p>
     </div>
   </div>
   <div class="flex justify-center my-10">
     <%= image_tag "dunk-bw.webp", height: 500, width: 500 %>
   </div>
-
 </div>
+
+
+
+ t.string "name"
+    t.string "sku"
+    t.text "description"
+    t.date "drop_date"
+    t.integer "estimated_ressell"
+    t.text "ressell_circle"
+    t.string "brand"
+    t.string "model"
+    t.integer "retail"
